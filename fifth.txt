@@ -7,3 +7,15 @@
 原因：在React框架的JSX编码格式要求，style必须是一个对象
 
 解决：style={{"marginTop:10px"}}
+2.遍历数组元素：
+
+场景：
+    const address = ['北京', '杭州', '深圳', '上海'];
+
+    address.map((item) => {
+        return (
+            <ul class="items">
+                <li class="item">{item}</li>
+            </ul>
+        )
+    });
