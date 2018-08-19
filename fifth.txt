@@ -1,0 +1,9 @@
+第一个要说说“内联样式”:
+
+场景：在JSX的render中写内联样式，如<div style={"marginTop:10px"}></div>
+
+报错：warning：Style prop value must be an object  react/style-prop-object
+
+原因：在React框架的JSX编码格式要求，style必须是一个对象
+
+解决：style={{"marginTop:10px"}}
